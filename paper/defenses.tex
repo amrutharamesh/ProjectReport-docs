@@ -1,0 +1,13 @@
+\section{Defenses}
+\label{sec:defenses}
+
+There are a few rules /precautionary measures which can be followed by the resource providers such that they do not give way to such vulnerable implementations. These defenses are :
+
+\begin{itemize}
+\item Put a hard check on redirect URI mismatch 
+\item The only safe validation method for redirect URI is exact matching
+\item Do not allow direct request to access token
+\item Include a login CSRF token check in the request 
+\item Include some uniquely generated value in the request which prevents request forgery
+\item Include a two-step verification mechanism
+\end{itemize}

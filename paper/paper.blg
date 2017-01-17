@@ -1,0 +1,60 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: paper.aux
+The style file: abbrv.bst
+Database file #1: paper.bib
+Warning--entry type for "bala:login-csrf" isn't style-file defined
+--line 11 of file paper.bib
+Warning--entry type for "homakov:cheat-sheet" isn't style-file defined
+--line 17 of file paper.bib
+Warning--entry type for "sanso:impl-vuln" isn't style-file defined
+--line 23 of file paper.bib
+Warning--entry type for "eran:oauth" isn't style-file defined
+--line 29 of file paper.bib
+Warning--to sort, need author or key in homakov:cheat-sheet
+Warning--to sort, need author or key in sanso:impl-vuln
+Warning--to sort, need author or key in eran:oauth
+Warning--empty year in barth:robust-defenses
+Warning--empty year in ethan:guidelines
+You've used 6 entries,
+            2118 wiz_defined-function locations,
+            517 strings with 4613 characters,
+and the built_in function-call counts, 1430 in all, are:
+= -- 117
+> -- 67
+< -- 0
++ -- 28
+- -- 22
+* -- 79
+:= -- 214
+add.period$ -- 15
+call.type$ -- 6
+change.case$ -- 29
+chr.to.int$ -- 0
+cite$ -- 11
+duplicate$ -- 56
+empty$ -- 148
+format.name$ -- 22
+if$ -- 310
+int.to.chr$ -- 0
+int.to.str$ -- 6
+missing$ -- 2
+newline$ -- 30
+num.names$ -- 6
+pop$ -- 72
+preamble$ -- 1
+purify$ -- 23
+quote$ -- 0
+skip$ -- 36
+stack$ -- 0
+substring$ -- 30
+swap$ -- 8
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 24
+warning$ -- 5
+while$ -- 6
+width$ -- 7
+write$ -- 50
+(There were 9 warnings)

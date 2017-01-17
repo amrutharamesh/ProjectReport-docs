@@ -1,0 +1,17 @@
+\section{System Overview}
+\label{sec:design}
+For our attacks, we designed a malicious client.  The application is a web server application that implements various OAuth2.0 Single sign ons. It has the following components :
+\begin{itemize}
+\item A Python web server that handles the requests and responses
+\item A front end templating library called Jinja2 to serve the HTML templates resolved by the server
+\item Deployed on Google App Engine at \\
+https://team-sso.appspot.com
+\end{itemize}
+In order to integrate the 22 single sign ons, we registered the application at the different resource providers depending on the various authorization flows that each implemented. The client ID and secret were collected and stored for all of them which were used for the various requests. The application contains SSO buttons that trigger the authorization process. 
+\textbf{Login CSRF attack:}\\
+In the first step, when a victim lands on the homepage, he/she will see the various sign on option buttons. Once he/she clicks on a button representing a provider of their choice, they are redirected to the next page. In this transition, we forge a login request to the target provider and log in with the attacker's credentials in the background. The user now sees another login button which is clicked and he/she is taken directly to the permissions page of the OAuth flow. This way the user does not ever log in with his/her credentials. Now when the user performs subsequent actions at the provider, he/she is unknowingly passing information about their activity to the attacker. This attack can happen in any form that does not have a CSRF token in it. We found that sometimes for the normal login scenario (where you reach the login page by typing the address) and in the OAuth scenario (user is redirected to a login form), different forms are used in which case one might be safe and one might be vulnerable. \\
+\textbf{Redirect URI attacks:}
+\begin{enumerate}[label=(\Alph*)]
+\item Redirect mismatch : The user logs in with his/her credentials. But the attacker has replaced the redirect URI in the code request to a URI of his choice. The request is sent with this URI and the response code is sent to this new redirect URI. Due to this the code is leaked to a URI other than the one registered. 
+\item Cover redirect : The user logs in with his/her credentials. But the attacker has changed the response type to access token straightaway. This leaks the access token in the hash of the URL which can be seen by any third party in the page. 
+\end{enumerate}

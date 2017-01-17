@@ -1,0 +1,33 @@
+\begin{thebibliography}{1}
+
+\bibitem{eran:oauth}
+{OAuth}.
+\newblock Available at \url{https://hueniverse.com/oauth/}.
+
+\bibitem{homakov:cheat-sheet}
+{OAuth Security Cheat Sheet}.
+\newblock Available at \url{http://www.oauthsecurity.com/}.
+
+\bibitem{sanso:impl-vuln}
+{Top 10 OAuth 2 Implementation Vulnerabilities}.
+\newblock Available at
+  \url{http://blog.intothesymmetry.com/2015/12/top-10-oauth-2-implementation.html}.
+
+\bibitem{barth:robust-defenses}
+A.~Barth, C.~Jackson, and J.~C. Mitchell.
+\newblock {Robust Defenses for Cross-Site Request Forgery}.
+\newblock In {\em ACM CCS 2008}.
+
+\bibitem{bala:login-csrf}
+B.~Prabakaran, G.~Athisenbagam, and K.~T. Ganesh.
+\newblock {Identifying Robust Defenses for Login CSRF}.
+\newblock Available at \url{https://www.cs.uic.edu/~bprabaka/LoginCSRF.pdf}.
+
+\bibitem{ethan:guidelines}
+E.~Shernan, H.~Carter, D.~Tian, P.~Traynor, and K.~Butler.
+\newblock {More Guidelines Than Rules: CSRF Vulnerabilities from Noncompliant
+  OAuth 2.0 Implementations}.
+\newblock In {\em Detection of Intrusions and Malware, and Vulnerability
+  Assessment, pp.239-260}.
+
+\end{thebibliography}
